@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&display=swap');
+.bg-falcon-9{
+    background-image: url("../img/falcon-9.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+
+.bg-falconHeavy{
+    background-image:url("../img/falcon-heavy.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+.bg-dragon{
+    background-image: url("../img/dragon.webp");
+    animation: fadeIn 2s ease-in-out;
+}
+.bg-starship{
+    background-image: url("../img/starship.jpg");
+}
+.selection-inner-center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+.selection-inner-center h3{
+    font-size: 90px;
+    padding-bottom: 18px;
+    animation: fadeInUp 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+.selection-inner-center p{
+    font-size: 20px;
+    padding-bottom: 18px;
+    animation: fadeInUp 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
+}
+
+/* start rocket counting */
+.starts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    
+}
+.starts div span{
+    font-size: 130px;
+    font-weight:100;
+}
+.starts div h4 {
+   font-size: 24px;
+   font-weight: 300;
+   animation: fadeInUp 0.5s ease-in-out 0.2s;
+}
+@keyframes fadeIn {
+    0%{
+     opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
+@keyframes fadeInUp{
+    0%{
+    opacity: 0;
+    transform: translateY(140px);
+    }
+    100%{
+     opacity: 1;
+     transform: translate(0);
+    }
+}
+
+
+@media (max-width: 960px){
+    .selection-inner-center h3{
+        font-size: 70px;
+    }
+    .selection-inner-center p {
+        font-size: 12px;
+    }
+    .starts div span{
+        font-size: 80px;
+        width: 136px;
+       
+    }
+    .starts div h4 {
+        font-size: 16px;
+        font-weight:100;
+        width: 136px;
+     }
+
+     .starts div{
+        margin: 20px;
+     } 
+
+}
+
+@media (max-width:600px){
+    .selection-inner-center h3{
+        font-size: 40px;
+    }
+
+    .selection-inner-center p {
+        font-size: 7px;
+    }
+    .starts div span{
+        font-size: 40px;
+        width: 70px;
+       
+    }
+    .starts div h4 {
+        font-size: 7px;
+        font-weight:100;
+        width: 68px;
+     }
+
+     .starts div{
+        margin: 15px;
+     } 
+    
+}
